@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Crear publicación
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  
+    <ion-item padding>
+      <ion-label position="stacked">Titulo <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="text" [(ngModel)]="titulo" name="razon"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tipo de producto</ion-label>
+      <ion-select value="03">
+        <ion-select-option value="01">Abarrotes</ion-select-option>
+        <ion-select-option value="02">Limpieza</ion-select-option>
+        <ion-select-option value="03">Frutas</ion-select-option>
+        <ion-select-option value="04">Bebestibles</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Precio<ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="number" [(ngModel)]="precio" name="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>¿Despacho a domicilio?</ion-label>
+      <ion-toggle slot="end" name="domicilio" checked></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Descripción</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tipo de venta</ion-label>
+      <ion-select value="03">
+        <ion-select-option value="01">Unidad</ion-select-option>
+        <ion-select-option value="02">Kilo</ion-select-option>
+        <ion-select-option value="03">Cajas (6 unidades)</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+    <ion-item>
+      <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+      <input type="file" />
+    </ion-item>
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin" (click)="OnLogin()">Publicar</ion-button>
+    </div>
+  
+</ion-content>

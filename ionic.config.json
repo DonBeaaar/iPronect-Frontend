@@ -1,0 +1,7 @@
+{
+  "name": "iPronect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

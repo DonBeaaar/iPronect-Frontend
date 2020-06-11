@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Donde Ale</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button size="small" routerLink="/perfil">All</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="small" routerLink="/disponibles">publicado</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="small" routerLink="/observaciones">observacion</ion-button>
+  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <div>
+        <h2>Todas mis publicaciones</h2>
+      </div>        
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="/assets/arroz.png" />
+        </ion-avatar>
+        <ion-label text-wrap>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <h3>Arroz Tucapel</h3>
+              </ion-col>
+              <ion-col>
+                $2.500
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                estado: publicado
+              </ion-col>
+
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                El mejor arroz pre-graneado del mercado
+              </ion-col>
+
+            </ion-row>
+          </ion-grid>
+          
+        </ion-label>
+        <ion-button size="small" color="success" slot="end" routerLink="/editar">editar</ion-button>
+      </ion-item>   
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="/assets/clorox.jpg" />
+        </ion-avatar>
+        <ion-label text-wrap>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <h3>Clorox</h3>
+              </ion-col>
+              <ion-col>
+                $4.000
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                estado: observacion
+              </ion-col>
+
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                El mejor limpiador de germenes
+              </ion-col>
+
+            </ion-row>
+          </ion-grid>
+          
+        </ion-label>
+        <ion-button size="small" color="success" slot="end" routerLink="/editar">editar</ion-button>
+      </ion-item>   
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

@@ -1,0 +1,79 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Todas las publicaciones
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Card</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class ="fondo"fullscreen>
+    <ion-card>
+      <img class="imagen" src="/assets/bebidas.png" />
+      <ion-card-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-card-subtitle>MiniMarket DonBear</ion-card-subtitle>
+            </ion-col>
+            <ion-col>
+              <div color="green">$7.000</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+        <ion-card-title>Jaba de bebidas</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Bebidas originales de buena calidad y excelente precio 
+      </ion-card-content>
+     
+    </ion-card>
+    <ion-card>
+      <img class="imagen" src="/assets/arroz.png" />
+      <ion-card-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-card-subtitle>Donde Ale</ion-card-subtitle>
+            </ion-col>
+            <ion-col>
+              <div color="green">$2.000</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+        <ion-card-title>Arros Tucapel</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        El arroz mas rico del mercado, Tucapel de gran selección pre-graneado 
+      </ion-card-content>
+      <ion-button expand="block" (click)="evaluacion()">observaciones</ion-button>
+    </ion-card>
+    <ion-card>
+      <img class="imagen" src="/assets/galletas.png" />
+      <ion-card-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-card-subtitle>Don Miguelo</ion-card-subtitle>
+            </ion-col>
+            <ion-col>
+              <div color="green">$3.000</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+        <ion-card-title>Pack de galletas</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Surtido de galletas de excelente calidad
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>

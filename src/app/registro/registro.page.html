@@ -1,0 +1,50 @@
+<ion-content class="fondo">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title class="ion-text-center">Registro</ion-card-title>
+    </ion-card-header>
+    <ion-item padding>
+      <ion-label position="stacked">Razon social:<ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="text" [(ngModel)]="razon" name="razon"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Email:<ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="text" [(ngModel)]="email" name="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Contraseña:<ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="password" [(ngModel)]="pass" name="pass"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Telefono:<ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="number" [(ngModel)]="telefono" name="telefono"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Telefono:<ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-segment value="favorite">
+        <ion-segment-button value="call">
+          <ion-label>Almacenero</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="favorite">
+          <ion-label>Distribuidor</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Dirección:<ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="text" [(ngModel)]="direccion" name="direccon"></ion-input>
+    </ion-item>
+  </ion-card>
+
+
+<div class="ion-padding">
+  <ion-button expand="block" type="submit" class="ion-no-margin" routerLink="/login">Ingresar</ion-button>
+</div>
+</ion-content>

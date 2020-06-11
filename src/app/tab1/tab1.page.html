@@ -1,0 +1,39 @@
+<ion-header translucent>
+  
+  <ion-toolbar>
+    <ion-searchbar animated (ionChange)="buscar ($event)"></ion-searchbar>
+  </ion-toolbar>  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    
+      <ion-card *ngFor="let c of componentes | filtro: textoBuscar"> 
+        <img class="imagen" [src]="c.icon" />
+      <ion-card-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-card-subtitle>{{c.user}}</ion-card-subtitle>
+            </ion-col>
+            <ion-col>
+              <div color="green">${{c.price}}</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+        <ion-card-title>{{c.name}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{c.descripcion}}
+       
+      </ion-card-content>
+      <ion-button slot="center" routerLink="/detalle">
+        ver detalle
+      </ion-button>
+      
+    </ion-card>
+   
+    
+    
+</ion-content>
+

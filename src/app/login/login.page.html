@@ -1,0 +1,34 @@
+<ion-content >
+  <ion-content class="fondo">
+    <ion-card >
+      <ion-card-header>
+        <ion-card-subtitle></ion-card-subtitle>
+        <ion-card-title class="ion-text-center">Iniciar sesion</ion-card-title>
+      </ion-card-header>
+      <ion-card-content >
+        
+
+          <ion-item padding>
+            <ion-label position="stacked">Email:<ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input required type="text" [(ngModel)]="email" name="email"></ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label position="stacked">Contraseña:<ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input required type="password" [(ngModel)]="contra" name="contra" ></ion-input>
+          </ion-item>
+          
+          <div class="ion-padding">
+            <ion-button expand="block" type="submit" class="ion-no-margin" (click)="OnLogin()">Ingresar</ion-button>
+          </div>
+          
+          
+        
+      </ion-card-content>
+    </ion-card>
+    
+        
+  </ion-content>
+</ion-content>

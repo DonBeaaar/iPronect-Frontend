@@ -1,0 +1,53 @@
+.background{
+    --background: url('/assets/fondo.png') 0 0/100% 100% no-repeat;
+}
+.invisible{
+    padding: 17px;
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slide{
+    padding: 17px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 60%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+
+.slide19 {
+    background-color    : rgba(255,255,255,0.0);
+    left                : 52%;
+    top                 : 30%;
+    height              : auto;
+    width               : auto;
+    position            : relative;
+    transform           : translate(-50%,-50%);
+    opacity             : 0.9;
+    font-family         : "Rubik", Helvetica, Arial, serif;
+    font-weight         : 700;
+    font-style          : normal;
+    font-size           : 42.0px;
+    color               : rgba(255, 255, 255, 1.0);
+    text-align          : center;
+    letter-spacing      : 12.0px;
+    line-height         : 54.0px;
+}
+.footer{
+    padding: 17px;
+    width: 500px;
+    height: 50px;
+    position: relative;
+    top: 35%;
+    left: 62% ;
+    transform: translate(-50%,-50%);
+}
+.redireccion{
+    text-decoration: none;
+    
+}
